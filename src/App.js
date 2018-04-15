@@ -20,10 +20,6 @@ class App extends Component {
     })
     axios({
       method:'get',
-      mode: 'no-cors',
-      headers: {
-        'Access-Control-Allow-Origin': '*'
-      },
       url: urlInfo,
       responseType:'stream'
     })
