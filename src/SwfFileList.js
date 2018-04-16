@@ -40,7 +40,7 @@ class SwfFileList extends React.Component {
     var responseData = this.props.fileList;
     if(this.props.url_error){
       return(
-        <p>Error in URL. </p>
+        <p>URL not found or Network Error.</p>
       )
     }
     else if(responseData && responseData.length == 0){

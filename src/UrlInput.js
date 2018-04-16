@@ -9,7 +9,7 @@ class UrlInput extends React.Component {
     super(props);
 
     this.state = {
-      value: 'http:\\'
+      value: ''
     };
   }
 
@@ -28,7 +28,7 @@ class UrlInput extends React.Component {
       <div>
         <TextField
           id="text-field-controlled"
-          hintText="Enter url here."
+          hintText={this.props.hintText}
           value={this.state.value}
           onChange={this.handleChange}
         />
